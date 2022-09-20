@@ -52,7 +52,6 @@ export const startLoginWithEmailPassword = ({ email, password }) => {
         email,
         password,
       });
-    console.log(displayName);
     if (!ok) return dispatch(logout({ errorMessage }));
 
     dispatch(login({ uid, displayName, email, photoURL }));
